@@ -1,0 +1,12 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin block-outline($width, $type, $color) {
+  outline: $width $type $color;
+  
+}

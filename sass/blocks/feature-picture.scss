@@ -1,0 +1,13 @@
+.feature-picture {
+  height: 260px;
+  margin: 0;
+  overflow: hidden;
+
+  &__image {
+    display: block;
+    width: auto;
+    height: 100%;
+
+    transform: translateX(-109px);
+  }
+}

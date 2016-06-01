@@ -1,0 +1,28 @@
+.feedback-header {
+  padding-right: 21px;
+  padding-bottom: 18px;
+  padding-left: 21px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  @include block-outline(1px, solid, black);
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-family: $font-bold;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+}
