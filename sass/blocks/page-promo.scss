@@ -34,14 +34,15 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+}
 
-  &__image {
-    position: absolute;
-    right: 50%;
 
-    display: block;
-    width: 280px;
+.page-promo__image {
+  position: absolute;
+  right: 50%;
 
-    transform: translateX(50%);
-  }
+  display: block;
+  width: 280px;
+
+  transform: translateX(50%);
 }

@@ -1,27 +1,34 @@
 .main-footer {
-  @include block-outline(1px, solid, #000);
-  text-align: center;
   margin-top: 40px;
   margin-bottom: 35px;
 
-  &__hashtag {
-    font-family: $font-bold;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-  }
+  text-align: center;
 
-  &__social-block {
-    font-size: 0;
-    margin-bottom: 40px;
+  @include block-outline(1px, solid, #000000);
+}
 
-    & .social-btn {
-      margin-right: 6px;
-    }
-  }
 
-  &__copyright {
-    margin-bottom: 35px;
+.main-footer__hashtag {
+  margin-bottom: 40px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-family: $font-bold;
+  text-transform: uppercase;
+}
+
+
+.main-footer__social-block {
+  margin-bottom: 40px;
+
+  font-size: 0;
+
+  & .social-btn {
+    margin-right: 6px;
   }
+}
+
+
+.main-footer__copyright {
+  margin-bottom: 35px;
 }

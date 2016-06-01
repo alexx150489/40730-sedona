@@ -3,23 +3,27 @@
 
   padding-bottom: 56px;
 
-  @include block-outline(1px, solid, #000000);
   @include clearfix();
-  &__logo {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+  @include block-outline(1px, solid, #000000);
+}
 
-    margin: 0;
 
-    transform: translateX(-50%);
-  }
+.page-header__logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 
-  &__logo img {
-    display: block;
-  }
+  margin: 0;
 
-  &__toogle {
-    float: right;
-  }
+  transform: translateX(-50%);
+}
+
+
+.page-header__logo img {
+  display: block;
+}
+
+
+.page-header__toogle {
+  float: right;
 }

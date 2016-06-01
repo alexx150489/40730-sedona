@@ -6,26 +6,29 @@
   text-align: center;
 
   @include block-outline(1px, solid, #000000);
+}
 
-  &__title {
-    display: block;
-    margin-bottom: 30px;
 
-    font-size: 21px;
-    line-height: 26px;
-    font-family: $font-bold;
-  }
+.search__title {
+  display: block;
+  margin-bottom: 30px;
 
-  &__description {
-    margin: 0;
-    margin-bottom: 40px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: $font-bold;
+}
 
-    font-size: 14px;
-    line-height: 24px;
-    color: $secondary-text-color;
-  }
 
-  &__btn {
-    margin-bottom: 50px;
-  }
+.search__description {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $secondary-text-color;
+}
+
+
+.search__btn {
+  margin-bottom: 50px;
 }
