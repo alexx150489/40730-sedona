@@ -1,0 +1,29 @@
+.page-header {
+  position: relative;
+
+  padding-bottom: 56px;
+
+  @include clearfix();
+  @include block-outline(1px, solid, #000000);
+}
+
+
+.page-header__logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  margin: 0;
+
+  transform: translateX(-50%);
+}
+
+
+.page-header__logo img {
+  display: block;
+}
+
+
+.page-header__toogle {
+  float: right;
+}

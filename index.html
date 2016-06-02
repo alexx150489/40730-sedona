@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
@@ -10,76 +11,84 @@
         <nav class="main-nav main-nav--open">
 
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
+            </li>
           </ul>
         </nav>
 
         <figure class="page-header__logo">
-          <img src="http://placehold.it/102x83" width="102" height="83" alt="">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
         </figure>
 
         <button class="page-header__toogle">Меню</button>
       </header>
 
       <div class="page-promo">
-        <img src="http://placehold.it/320x360" width="320" height="360" alt="Седона" class="page-promo__img">
+        <img class="page-promo__image" src="img/text-sedona-index.svg" width="389" height="280" alt="Седона" class="page-promo__img">
       </div>
 
 
-      <main class="content-container">
-        <div class="features-header">
-          <h1 class="features-header__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="features-header__description">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+
+      <div class="features-header">
+        <h1 class="features-header__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="features-header__description">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+      </div>
+
+
+      <div class="features-row">
+        <div class="feature feature--blue feature--bg-mask">
+          <h2 class="feature__title">Настоящий городок</h2>
+          <span class="feature__number">— №1 —</span>
+          <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
 
+        <figure class="feature-picture">
+          <img src="img/photo-city@1x.jpg" height="260" alt="" class="feature-picture__image">
+        </figure>
+      </div>
 
-        <div class="features-row">
-          <div class="feature feature--blue">
-            <h2 class="feature__title">Настоящий городок</h2>
-            <span class="feature__number">— №1 —</span>
-            <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
 
-          <figure class="feature-picture">
-            <img src="http://placehold.it/320x360" width="320" height="360" alt="" class="feature-picture__image">
-          </figure>
+      <div class="feature-row">
+        <div class="feature feature--icon feature--icon-house">
+          <h2 class="feature__title">Жилье</h2>
+          <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
 
-
-        <div class="feature-row">
-          <div class="feature feature--icon feature--icon-house">
-            <h2 class="feature__title">Жилье</h2>
-            <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-
-          <div class="feature feature--icon feature--icon-souvenir">
-            <h2 class="feature__title">Сувениры</h2>
-            <p class="feature__description">Не только китайского, но и местного производства!</p>
-          </div>
-
-          <div class="feature feature--icon feature--icon-food">
-            <h2 class="feature__title">Еда</h2>
-            <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
+        <div class="feature feature--icon feature--icon-souvenir">
+          <h2 class="feature__title">Сувениры</h2>
+          <p class="feature__description">Не только китайского, но и местного производства!</p>
         </div>
 
+        <div class="feature feature--icon feature--icon-food">
+          <h2 class="feature__title">Еда</h2>
+          <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+      </div>
 
-        <div class="features-row">
-          <div class="feature feature--blue">
-            <h2 class="feature__title">Там есть мост дьявола!</h2>
-            <span class="feature__number">— №2 —</span>
-            <p class="feature__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
 
-          <figure class="feature-picture">
-            <img src="http://placehold.it/320x360" width="320" height="360" alt="" class="feature-picture__image">
-          </figure>
+      <div class="features-row">
+        <div class="feature feature--blue">
+          <h2 class="feature__title">Там есть мост дьявола!</h2>
+          <span class="feature__number">— №2 —</span>
+          <p class="feature__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
 
+        <figure class="feature-picture">
+          <img src="img/photo-bridge@1x.jpg" height="260" alt="" class="feature-picture__image">
+        </figure>
+      </div>
 
+      <div class="content-container">
         <div class="features-row">
           <div class="feature feature--gray">
             <h2 class="feature__title">Небольщая площадь</h2>
@@ -99,20 +108,20 @@
             <p class="feature__description">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
+      </div>
 
 
-        <div class="search">
-          <b class="search__title">Заинтересовались?</b>
-          <p class="search__description">Укажите предполагаемые даты поездки и
-            мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <button class="btn search__btn">Найти гостиницу</button>
-        </div>
+      <div class="search">
+        <b class="search__title">Заинтересовались?</b>
+        <p class="search__description">Укажите предполагаемые даты поездки и
+          мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="btn search__btn">Найти гостиницу</button>
+      </div>
 
 
-        <div class="map">
-          <div class="map__canvas"></div>
-        </div>
-      </main>
+      <div class="map">
+        <div class="map__canvas"></div>
+      </div>
 
 
       <footer class="main-footer">

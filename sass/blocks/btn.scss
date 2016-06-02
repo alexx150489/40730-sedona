@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 16px 35px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-family: $font-bold;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $secondary-background;
+  border: none;
+  cursor: pointer;
+}

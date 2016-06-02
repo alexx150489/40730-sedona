@@ -1,0 +1,54 @@
+.video-controls {
+  @include block-outline(2px, dashed, blue);
+}
+
+
+.video-controls__progress-info {
+  display: none;
+  width: 280px;
+  height: 44px;
+  margin: 0 auto;
+  padding-top: 1px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  &--open {
+    display: block;
+  }
+}
+
+
+.video-controls__progress-bar {
+  position: relative;
+
+  width: 235px;
+  height: 3px;
+  margin-top: 21px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.video-controls__scrubber-btn {
+  position: absolute;
+  top: -85%;
+  left: 15%;
+
+  width: 9px;
+  height: 9px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.video-controls__menu {
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+
+  background-color: #f2f2f2;
+}

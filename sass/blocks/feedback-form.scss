@@ -1,0 +1,173 @@
+.feedback-form {
+  @include block-outline(1px, solid, black);
+}
+
+
+.feedback-form__item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @include block-outline(2px, dashed, blue);
+
+  &--emotions {
+    padding-bottom: 50px;
+
+    border-bottom: none;
+  }
+}
+
+
+.feedback-form__legend {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-bold;
+  text-align: center;
+}
+
+
+.feedback-form__label {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: $secondary-text-color;
+
+  &--radio,
+  &--checkbox {
+    position: relative;
+
+    display: block;
+    margin-bottom: 50px;
+    padding-left: 78px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-family: $font-bold;
+    text-align: left;
+    text-transform: none;
+
+    cursor: pointer;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: $input-background;
+    border-radius: 5px;
+  }
+
+  &--radio::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: $input-background;
+    border-radius: 50%;
+  }
+}
+
+
+.feedback-form__input {
+  box-sizing: border-box;
+  height: 58px;
+  padding: 16px 22px 16px 22px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-bold;
+
+  background-color: $input-background;
+  border: none;
+
+  &--radio {
+    display: none;
+  }
+
+  &--radio:checked + .feedback-form__label--radio::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 17px;
+
+    width: 22px;
+    height: 22px;
+
+    background-color: #333333;
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    display: none;
+  }
+
+  &--checkbox:checked + .feedback-form__label--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 17px;
+
+    width: 24px;
+    height: 16px;
+
+    background-image: url(../img/icon-tick.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+.feedback-form__textarea {
+  box-sizing: border-box;
+  width: 279px;
+  min-height: 160px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $font-bold;
+
+  background-color: $input-background;
+  border: none;
+
+  resize: none;
+}
+
+
+.feedback-form__error {
+  display: block;
+  padding-top: 8px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: #ff5c5c;
+  text-transform: none;
+}
+
+
+.feedback-form__btn {
+  width: 280px;
+  margin-right: 20px;
+  margin-left: 20px;
+}

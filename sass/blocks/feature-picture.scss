@@ -1,0 +1,14 @@
+.feature-picture {
+  height: 260px;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.feature-picture__image {
+  display: block;
+  width: auto;
+  height: 100%;
+
+  transform: translateX(-109px);
+}
