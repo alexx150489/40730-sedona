@@ -1,0 +1,1206 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans.woff") format("woff"), url("/fonts/ptsans.woff2") format("woff2"); }
+
+@font-face {
+  font-weight: bold;
+  font-style: bold;
+  font-family: "PT Sans Bold";
+  src: url("/fonts/ptsansbold.woff") format("woff"), url("/fonts/ptsansbold.woff2") format("woff2"); }
+
+body {
+  font-weight: normal;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  text-transform: uppercase; }
+
+.content-container {
+  padding-right: 20px;
+  padding-left: 20px;
+  outline: 1px solid #000000; }
+
+@media (min-width: 768px) {
+  .content-container {
+    padding: 0; } }
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+  font-style: normal; }
+
+.feature-picture {
+  height: 260px;
+  margin: 0;
+  overflow: hidden; }
+
+.feature-picture__image {
+  display: block;
+  width: auto;
+  height: 100%;
+  transform: translateX(-109px); }
+
+@media (min-width: 768px) {
+  .feature-picture {
+    width: 66.6666666%;
+    float: left;
+    height: 256px; }
+  .feature-picture__image {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translateY(-50%); } }
+
+.feature {
+  padding-top: 45px;
+  padding-right: 4.2%;
+  padding-bottom: 45px;
+  padding-left: 4.2%;
+  text-align: center;
+  outline: 2px dashed blue; }
+  .feature--blue {
+    color: #ffffff;
+    background-color: #81b3d2; }
+  .feature--gray {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #eee; }
+  .feature--icon {
+    padding-top: 40px;
+    padding-left: 70px;
+    text-align: left; }
+  .feature--bg-mask {
+    position: relative;
+    padding-top: 80px; }
+    .feature--bg-mask::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 37px;
+      background-image: url(../img/features-header-mask.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+
+.feature__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font: "PT Sans Bold", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 21px; }
+
+.feature__number {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 21px; }
+
+.feature__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px; }
+
+@media (min-width: 768px) {
+  .feature {
+    float: left;
+    box-sizing: border-box;
+    width: 33.3333333%;
+    min-height: 256px; }
+    .feature--bg-mask {
+      position: static;
+      padding-top: 45px; }
+      .feature--bg-mask::before {
+        content: none; }
+    .feature--icon {
+      min-height: 330px;
+      padding-top: 150px;
+      padding-bottom: 71px;
+      padding-left: 4.2%;
+      text-align: center; }
+    .feature--gray {
+      padding-top: 50px; } }
+
+.features-header {
+  margin-bottom: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  outline: 1px solid black; }
+
+.features-header__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-align: center; }
+
+.features-header__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333; }
+
+@media (min-width: 768px) {
+  .features-header {
+    width: 486px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto; } }
+
+.features-row {
+  outline: 1px solid black; }
+  .features-row::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.feedback-form {
+  outline: 1px solid black; }
+
+.feedback-form__item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  outline: 2px dashed blue; }
+  .feedback-form__item--emotions {
+    padding-bottom: 50px;
+    border-bottom: none; }
+
+.feedback-form__legend {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-align: center; }
+
+.feedback-form__label {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333; }
+  .feedback-form__label--radio, .feedback-form__label--checkbox {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    padding-left: 78px;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "PT Sans Bold", "Tahoma", sans-serif;
+    text-align: left;
+    text-transform: none;
+    cursor: pointer; }
+  .feedback-form__label--checkbox::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 5px; }
+  .feedback-form__label--radio::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    border-radius: 50%; }
+
+.feedback-form__input {
+  box-sizing: border-box;
+  height: 58px;
+  padding: 16px 22px 16px 22px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  background-color: #f2f2f2;
+  border: none; }
+  .feedback-form__input--radio {
+    display: none; }
+  .feedback-form__input--radio:checked + .feedback-form__label--radio::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 17px;
+    width: 22px;
+    height: 22px;
+    background-color: #333333;
+    border-radius: 50%; }
+  .feedback-form__input--checkbox {
+    display: none; }
+  .feedback-form__input--checkbox:checked + .feedback-form__label--checkbox::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 17px;
+    width: 24px;
+    height: 16px;
+    background-image: url(../img/icon-tick.svg);
+    background-repeat: no-repeat; }
+
+.feedback-form__textarea {
+  box-sizing: border-box;
+  width: 279px;
+  min-height: 160px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  background-color: #f2f2f2;
+  border: none;
+  resize: none; }
+
+.feedback-form__error {
+  display: block;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ff5c5c;
+  text-transform: none; }
+
+.feedback-form__btn {
+  width: 280px;
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.feedback-form__required-fileds {
+  display: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333; }
+
+@media (min-width: 768px) {
+  .feedback-form {
+    position: relative;
+    font-size: 0; }
+  .feedback-form__item {
+    display: inline-block;
+    vertical-align: top; }
+    .feedback-form__item--name {
+      width: 50%;
+      min-height: 350px;
+      margin-bottom: 256px; }
+    .feedback-form__item--impression {
+      width: 50%;
+      min-height: 350px; }
+    .feedback-form__item--contact-info {
+      position: absolute;
+      top: 354px;
+      left: 0;
+      width: 100%;
+      min-height: 250px; }
+    .feedback-form__item--showplace {
+      width: 100%;
+      min-height: 250px; }
+    .feedback-form__item--emotions {
+      width: 100%;
+      min-height: 250px; }
+  .feedback-form__textarea {
+    width: 100%; }
+  .feedback-form__btn {
+    margin: 0; }
+  .feedback-form__required-fileds {
+    display: block;
+    width: 200px; } }
+
+@media (min-width: 1200px) {
+  .feedback-form {
+    padding-right: 120px;
+    padding-left: 120px; }
+  .feedback-form__item--contact-info {
+    width: 80%;
+    margin-left: 120px; } }
+
+.feedback-header {
+  padding-right: 21px;
+  padding-bottom: 18px;
+  padding-left: 21px;
+  border-bottom: 1px solid #e5e5e5;
+  outline: 1px solid black; }
+
+.feedback-header__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-align: center; }
+
+.feedback-header__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333; }
+
+@media (min-width: 768px) {
+  .feedback-header {
+    width: 439px;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto; } }
+
+.main-footer {
+  margin-bottom: 35px;
+  padding-top: 40px;
+  text-align: center;
+  outline: 1px solid #000000; }
+
+.main-footer__hashtag {
+  margin-bottom: 40px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-transform: uppercase; }
+
+.main-footer__social-block {
+  margin-bottom: 40px;
+  font-size: 0; }
+  .main-footer__social-block .social-btn {
+    margin-right: 6px; }
+
+.main-footer__copyright {
+  margin-bottom: 35px; }
+
+@media (min-width: 768px) {
+  .main-footer::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .main-footer__hashtag {
+    float: left;
+    width: 33.3333333%;
+    padding-top: 11px; }
+  .main-footer__social-block {
+    float: left;
+    width: 33.3333333%; }
+  .main-footer__copyright {
+    display: block;
+    float: left;
+    width: 33.3333333%;
+    margin-bottom: 0;
+    padding-top: 11px; } }
+
+.main-nav {
+  outline: 2px solid blue; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__item {
+  border-top: 1px solid #9ac1db;
+  border-bottom: 1px solid #678fa8; }
+
+.main-nav__item:first-child {
+  border-top: none; }
+
+.main-nav__link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #81b3d2; }
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    font-size: 0; }
+  .main-nav__item {
+    border: none;
+    vertical-align: top;
+    display: inline-block;
+    width: 20%; }
+    .main-nav__item:nth-child(2) {
+      margin-right: 20%; }
+  .main-nav__link {
+    background: none;
+    font-size: 14px;
+    color: #000000; } }
+
+.map {
+  height: 350px;
+  background: url("/img/bg-map-mobile@1x.jpg") no-repeat center;
+  outline: 1px solid #000000; }
+
+.media-header {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  border-bottom: 1px solid #e5e5e5;
+  outline: 1px solid black; }
+
+.media-header__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-align: center; }
+
+.media-header__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333; }
+
+@media (min-width: 768px) {
+  .media-header {
+    padding: 0;
+    width: 428px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px; } }
+
+.media-item {
+  padding: 20px 20px 20px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  outline: 2px dashed blue; }
+
+.media-item__link img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.media-item__description {
+  margin-top: 20px; }
+
+.media-item__title {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif; }
+
+.media-item__author {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333; }
+
+.media-item__likes-count {
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer; }
+
+@media (min-width: 768px) {
+  .media-item {
+    display: inline-block;
+    width: 50%;
+    padding: 0; }
+    .media-item::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .media-item:first-child {
+      width: 100%; }
+  .media-item__description {
+    float: left;
+    width: 72.5%; }
+  .media-item__likes {
+    float: right; }
+  .media-item__link img {
+    width: 100%;
+    height: 267px; } }
+
+@media (min-width: 1200px) {
+  .media-item {
+    width: 33.3333333%; } }
+
+.media-items {
+  outline: 1px solid black; }
+
+@media (min-width: 768px) {
+  .media-items {
+    font-size: 0; } }
+
+.page-header {
+  position: relative;
+  padding-bottom: 56px;
+  outline: 1px solid #000000; }
+  .page-header::after {
+    content: '';
+    display: table;
+    clear: both; }
+
+.page-header__logo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%); }
+
+.page-header__logo img {
+  display: block; }
+
+.page-header__toggle {
+  float: right; }
+
+@media (min-width: 768px) {
+  .page-header {
+    padding-bottom: 0; }
+  .page-header__logo {
+    top: 0;
+    z-index: 1; }
+  .page-header__toggle {
+    display: none; } }
+
+.page-promo {
+  position: relative;
+  min-height: 389px;
+  margin-bottom: 38px;
+  background-color: #81b3d2;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  outline: 1px solid black; }
+  .page-promo--small {
+    min-height: 158px; }
+    .page-promo--small .page-promo__image {
+      top: 33%;
+      width: 229px; }
+  .page-promo::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 27px;
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; }
+
+.page-promo__image {
+  position: absolute;
+  right: 50%;
+  display: block;
+  width: 280px;
+  transform: translateX(50%); }
+
+@media (min-width: 768px) {
+  .page-promo__image {
+    top: 16%;
+    width: 460px; } }
+
+.search {
+  margin-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+  outline: 1px solid #000000; }
+
+.search__title {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif; }
+
+.search__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333; }
+
+.search__btn {
+  margin-bottom: 50px; }
+
+@media (min-width: 768px) {
+  .search {
+    width: 458px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0; }
+  .search__btn {
+    width: 458px; } }
+
+.site-wrapper {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .site-wrapper {
+    max-width: 768px; } }
+
+@media (min-width: 1200px) {
+  .site-wrapper {
+    max-width: 1200px; } }
+
+.video-controls {
+  outline: 2px dashed blue; }
+
+.video-controls__progress-info {
+  position: relative;
+  display: none;
+  width: 280px;
+  height: 44px;
+  margin: 0 auto;
+  padding-top: 1px;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .video-controls__progress-info::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .video-controls__progress-info--open {
+    display: block; }
+
+.video-controls__progress-bar {
+  position: relative;
+  width: 235px;
+  height: 3px;
+  margin-top: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.video-controls__scrubber-btn {
+  position: absolute;
+  top: -85%;
+  left: 15%;
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer; }
+
+.video-controls__repeat-btn {
+  position: absolute;
+  bottom: -37px;
+  left: 25px; }
+
+.video-controls__subtitles-btn {
+  position: absolute;
+  right: 74px;
+  bottom: -37px; }
+
+.video-controls__fullscreen-btn {
+  position: absolute;
+  right: 23px;
+  bottom: -37px; }
+
+@media (min-width: 768px) {
+  .video-controls {
+    margin-top: -94px;
+    z-index: 1000; }
+  .video-controls__progress-info {
+    box-sizing: border-box;
+    width: 100%;
+    height: 93px;
+    margin: 0; }
+  .video-controls__progress-bar {
+    float: left;
+    width: 389px;
+    margin-top: 45px;
+    margin-right: 42px; }
+  .video-controls__repeat-btn {
+    position: static;
+    float: left;
+    margin-top: 35px;
+    margin-right: 42px;
+    margin-left: 35px; }
+  .video-controls__subtitles-btn {
+    position: static;
+    float: left;
+    margin-top: 35px;
+    margin-right: 31px; }
+  .video-controls__fullscreen-btn {
+    position: static;
+    float: left;
+    margin-top: 35px; } }
+
+@media (min-width: 1200px) {
+  .video-controls__progress-bar {
+    width: 540px; } }
+
+.video {
+  margin-top: 35px;
+  margin-bottom: 80px;
+  outline: 1px solid black; }
+
+.video__title {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  text-align: center; }
+
+.video__description {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #333; }
+
+.video__item-picture {
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover; }
+
+.video__video-controls .video-controls__progress-info {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px; }
+  .video__video-controls .video-controls__progress-info::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    min-height: 66px;
+    background-color: #f2f2f2; }
+
+@media (min-width: 768px) {
+  .video {
+    width: 648px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto; }
+  .video__title {
+    padding-right: 115px;
+    padding-left: 115px; }
+  .video__description {
+    margin-bottom: 75px;
+    padding-right: 115px;
+    padding-left: 115px; }
+  .video__item-picture {
+    width: 648px;
+    height: 499px; }
+  .video__video-controls .video-controls__progress-info {
+    position: static; }
+    .video__video-controls .video-controls__progress-info::after {
+      content: none; } }
+
+@media (min-width: 1200px) {
+  .video {
+    width: 800px; }
+  .video__title {
+    padding-right: 190px;
+    padding-left: 190px; }
+  .video__description {
+    margin-bottom: 75px;
+    padding-right: 190px;
+    padding-left: 190px; }
+  .video__item-picture {
+    width: 800px;
+    height: 500px; } }
+
+.btn {
+  display: inline-block;
+  padding: 16px 35px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #81b3d2;
+  border: none;
+  cursor: pointer; }
+
+.social-btn {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  background-color: #81b3d2; }
