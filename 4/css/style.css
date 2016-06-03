@@ -374,7 +374,7 @@ textarea {
   font-weight: bold;
   font-style: bold;
   font-family: "PT Sans Bold";
-  src: url("/fonts/ptsansbold.woff") format("woff"), url("/fonts/ptsansbold.woff2") format("woff2"); }
+  src: url("../../fonts/ptsansbold.woff") format("woff"), url("../../fonts/ptsansbold.woff2") format("woff2"); }
 
 body {
   font-weight: normal;
@@ -453,7 +453,7 @@ body {
 .feature__title {
   margin: 0;
   margin-bottom: 10px;
-  font: "PT Sans Bold", "Tahoma", sans-serif;
+  font-family: "PT Sans Bold", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 21px; }
 
@@ -805,7 +805,7 @@ body {
 
 .map {
   height: 350px;
-  background: url("/img/bg-map-mobile@1x.jpg") no-repeat center;
+  background: url("../img/bg-map-mobile@1x.jpg") no-repeat center;
   outline: 1px solid #000000; }
 
 .media-header {
