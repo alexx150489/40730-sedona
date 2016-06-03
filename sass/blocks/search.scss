@@ -32,3 +32,16 @@
 .search__btn {
   margin-bottom: 50px;
 }
+
+@media #{$tablet-widths} {
+  .search {
+    width: 458px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .search__btn {
+    width: 458px;
+  }
+}

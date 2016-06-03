@@ -4,3 +4,9 @@
 
   @include block-outline(1px, solid, #000000);
 }
+
+@media #{$tablet-widths} {
+  .content-container {
+    padding: 0;
+  }
+}

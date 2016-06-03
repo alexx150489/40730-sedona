@@ -29,3 +29,14 @@
   text-align: center;
   color: $secondary-text-color;
 }
+
+
+@media #{$tablet-widths} {
+  .media-header {
+    padding: 0;
+    width: 428px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+  }
+}

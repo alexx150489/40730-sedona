@@ -1,6 +1,6 @@
 .main-footer {
-  margin-top: 40px;
   margin-bottom: 35px;
+  padding-top: 40px;
 
   text-align: center;
 
@@ -31,4 +31,33 @@
 
 .main-footer__copyright {
   margin-bottom: 35px;
+}
+
+
+@media #{$tablet-widths} {
+  .main-footer {
+    @include clearfix();
+  }
+
+
+  .main-footer__hashtag {
+    float: left;
+    width: 33.3333333%;
+    padding-top: 11px;
+  }
+
+
+  .main-footer__social-block {
+    float: left;
+    width: 33.3333333%;
+  }
+
+
+  .main-footer__copyright {
+    display: block;
+    float: left;
+    width: 33.3333333%;
+    margin-bottom: 0;
+    padding-top: 11px;
+  }
 }
