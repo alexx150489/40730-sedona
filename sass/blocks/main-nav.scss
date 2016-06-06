@@ -36,3 +36,28 @@
 
   background-color: $secondary-background;
 }
+
+@media #{$tablet-widths} {
+  .main-nav__list {
+    font-size: 0;
+  }
+
+
+  .main-nav__item {
+    border: none;
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
+
+
+  .main-nav__link {
+    background: none;
+    font-size: 14px;
+    color: #000000;
+  }
+}

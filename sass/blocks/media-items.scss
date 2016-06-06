@@ -1,3 +1,10 @@
 .media-items {
   @include block-outline(1px, solid, black);
 }
+
+
+@media #{$tablet-widths} {
+  .media-items {
+    font-size: 0;
+  }
+}

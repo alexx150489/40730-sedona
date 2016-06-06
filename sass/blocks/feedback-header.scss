@@ -26,3 +26,13 @@
   text-align: center;
   color: $secondary-text-color;
 }
+
+
+@media #{$tablet-widths} {
+  .feedback-header {
+    width: 439px;
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+  }
+}

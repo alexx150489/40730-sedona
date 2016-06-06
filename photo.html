@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Document</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,11 +19,13 @@
         </ul>
       </nav>
 
-      <figure class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
-      </figure>
+      <a href="index.html" class="page-header__logo-link">
+        <figure class="page-header__logo">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+        </figure>
+      </a>
 
-      <button class="page-header__toogle">Меню</button>
+      <button class="page-header__toggle">Меню</button>
     </header>
 
 
@@ -114,20 +117,16 @@
 
 
       <div class="video__item">
-        <figure class="video__item-picture">
-          <img src="img/video-mobile@1x.jpg" width="280" height="280" alt="" class="video__item-image">
-        </figure>
+        <div class="video__item-picture"></div>
 
-
-        <div class="video-contols video__video-controls">
+        <div class="video-controls video__video-controls">
           <div class="video-controls__progress-info video-controls__progress-info--open">
+            <button class="video-controls__repeat-btn"></button>
+
             <div class="video-controls__progress-bar">
               <div class="video-controls__scrubber-btn"></div>
             </div>
-          </div>
 
-          <div class="video-controls__menu">
-            <button class="video-controls__repeat-btn"></button>
             <button class="video-controls__subtitles-btn"></button>
             <button class="video-controls__fullscreen-btn"></button>
           </div>
